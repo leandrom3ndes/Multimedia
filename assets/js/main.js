@@ -190,4 +190,65 @@
     aos_init();
   });
 
+  // Play video on viewport
+  $(window).on('scroll load', function(){
+    $('.responsive-vid iframe').each( function(i){
+      player.pauseVideo();
+      var scroll_position = $(window).scrollTop();
+      var bottom_of_video = $(this).offset().top + ($(this).outerHeight() / 2);
+      var bottom_of_window3 = $(window).scrollTop() + $(window).height();
+      if( bottom_of_window3 > bottom_of_video && scroll_position < bottom_of_video ) {  
+        player.playVideo();
+        $('#player').css({'opacity':'1'});
+      } else {
+        player.pauseVideo();
+        $('#player').css({'opacity':'.6'});
+      }
+    });
+  });
+
+  //Timeline
+  jQuery('.timeline').timeline({
+    mode: 'horizontal',
+    moveItems: 1,
+    horizontalStartPosition: 'bottom', // or bottom
+    visibleItems: 4,
+    forceVerticalMode: 600// 600px
+  });
+  
+
 })(jQuery);
+
+  //Video Fundacao
+
+  // Carrega o IFrame Player API
+	var tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+  //Cria o youtube player depois da API ser carregada
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+          videoId: "1QT_M8q5AH0", // YouTube Video ID
+          width: 1920, // Player width (in px)
+          playerVars: {
+            autoplay: 0, // Auto-play the video on load
+            controls: 1, // Show pause/play buttons in player
+            showinfo: 0, // Hide the video title
+            modestbranding: 0, // Hide the Youtube Logo
+            loop: 1, // Run the video in a loop
+            fs: 0, // Hide the full screen button
+            cc_load_policy: 0, // Hide closed captions
+            iv_load_policy: 3, // Hide the Video Annotations
+            autohide: 1, // Hide video controls when playing
+            start: 250,
+            end: 300,
+            mute: 1, // Sound Off On
+            rel: 0
+			}
+		});
+	}
