@@ -525,7 +525,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9997;
+  z-index: 999;
   transition: all 0.5s;
   padding: 0 15px;
   background: #040b14;
@@ -682,7 +682,6 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
 }
 
 #hero .hero-container {
@@ -1649,3 +1648,198 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+/* PONTES */
+.projetos {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.projetos h2, .projetos .container-dois-projetos .card-projeto span {
+  font-weight: bold;
+  color: #173b6c;
+}
+
+.projetos h2{
+  font-size: 28px;
+  margin-bottom: 5%;
+  align-self: center;
+  height: 5%;
+}
+
+.card-projeto span.card-heading {
+  height: 20%;
+  width: 100%;
+  margin: 5% 0 5% 0;
+  font-size: medium;
+}
+
+.projetos .container-dois-projetos {
+  display: flex;
+  width: 90%;
+  height: 50%;
+  justify-content: center;
+}
+
+.projetos .container-dois-projetos .card-projeto {
+  display: flex;
+  flex-flow: column;
+  background-color: white;
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 2.5%;
+  margin-right: 15px;
+  height: 50vh;
+  cursor: pointer;
+}
+
+.card-projeto img {
+  border-radius: 4px;
+  width: 80%;
+  margin-bottom: 5%;  
+}
+
+.card-projeto .project-description {
+  display: none;
+  visibility: hidden;
+  font-size: medium;
+  text-align: left;
+  margin: 0 10px 0 10px;
+}
+
+@media (max-width: 420px) {
+  .projetos .container-dois-projetos {
+    flex-flow: column;
+  }
+
+  .projetos .container-dois-projetos .card-projeto {
+    height: auto;
+  }
+
+}
+
+/* Bouncing balls */
+.bouncingball-container {
+  width: 100%;
+}
+
+.bouncingball-container a {
+  color: black;
+}
+
+.bouncingball, .bouncingball2, .bouncingball3, .bouncingball4{
+  width:140px;
+  height:140px;
+  border-radius:100%;
+  background:#CCC;
+  animation: bounce 6s;
+  animation-iteration-count: infinite;
+  position:absolute;
+  margin:50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bouncingball-span {
+  margin: auto;
+  font-size: medium;
+}
+
+.bouncingball3, .bouncingball4{
+  animation: bounce2 6s;
+  animation-iteration-count: infinite;
+}
+
+.bouncingball2, .bouncingball4{
+  right: 20px;
+}
+
+.bouncingball4, .bouncingball3{
+  bottom:30px;
+}
+
+
+@keyframes bounce {
+    0% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+    25%{
+        transform: translateX(50%);
+    }
+    50% {
+        top: 140px;
+        height: 140px;
+        animation-timing-function: ease-out;
+       }
+    55% {
+        top: 160px; 
+        height: 120px; 
+        animation-timing-function: ease-in;
+      }
+    65% {
+        top: 120px; 
+        height: 140px; 
+        animation-timing-function: ease-out;
+        transform: translateX(-50%);
+      }
+    100% {
+        top: 0;
+        animation-timing-function: ease-in;
+    }
+}
+
+
+@keyframes bounce2 {
+  0% {
+      animation-timing-function: ease-in;
+  }
+  25%{
+      transform: translateX(50%);
+  }
+  50% {
+      bottom: 140px;
+      height: 140px;
+      animation-timing-function: ease-out;
+     }
+  55% {
+      bottom: 160px; 
+      height: 120px; 
+      animation-timing-function: ease-in;
+    }
+  65% {
+      bottom: 120px; 
+      height: 140px; 
+      animation-timing-function: ease-out;
+      transform: translateX(-50%);
+    }
+  100% {
+      bottom: 30px;
+      animation-timing-function: ease-in;
+  }
+}
+
+@media ( max-width: 470px ) {
+
+  .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bouncingball-span {
+    font-size: small;
+  }
+
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+/* PONTES */
