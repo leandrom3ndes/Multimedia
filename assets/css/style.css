@@ -12,6 +12,7 @@
 /*---------------------------------------------------------------------------------------------MESKY---------------------------------------------------------------------------*/
 *, *::after, *::before {
   box-sizing: border-box;
+  
 }
 
 html {
@@ -47,6 +48,16 @@ Main Components
   content: 'mobile';
   display: none;
 }
+/*----------------------------------------------------------PONTES PRO-----------------------------------------*/
+.events li, .events-content li, .cd-timeline-navigation li {
+  list-style: none;
+}
+
+.timeline:not(.timeline--horizontal):before{
+  visibility: hidden !important;
+
+}
+/*Boa call*/
 .cd-horizontal-timeline.loaded {
   /* show the timeline after events position has been set (using JavaScript) */
   opacity: 1;
@@ -670,7 +681,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: url("../img/SirBill.jpg") top center;
   background-size: cover;
 }
 
