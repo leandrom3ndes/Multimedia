@@ -27,6 +27,16 @@
   <!-- Main CSS File -->
   <link href="assets/css/timeline.min.css" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- chavainhes-->
+    <!-- Windows XP Theme (include only one theme at a time) -->
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+    <!-- <script src="swc.js"></script>-->
+
+
 </head>
 
 <body>
@@ -60,6 +70,35 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+
+
+    <!-- POP up -->
+    <div id="window" class="window" style="width: 300px; height: 200px; z-index:9999;">
+      <div class="title-bar">
+        <div class="title-bar-text" style="color: white;"><h5>My first PopUp</h5></div>
+        
+        <div class="title-bar-controls">
+          <button aria-label="Minimize"  onclick="make_disappear()"></button>
+          <button aria-label="Maximize">
+    
+          </button>
+          <button aria-label="Close" onclick="make_disappear()" >
+    
+          </button>
+        </div>
+      </div>
+      <div class="window-body">
+        <h5>Hello World!</h5>
+      </div>
+    </div>
+  
+    <script>
+      function make_disappear(){
+        $('#window').hide();
+      }
+    </script>
+    <!-- //POP up -->
+
     <div class="bouncingball-container">
       <a href="#vida"><div class="bouncingball"><span class="bouncingball-span">Vida</span></div></a>
       <a href="#projetos"><div class="bouncingball3"><span class="bouncingball-span">Projetos<span></div></a>
