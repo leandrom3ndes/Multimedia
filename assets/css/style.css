@@ -1857,4 +1857,45 @@ html {
   width: 90%;
 }
 
+.chosen-project {
+  font-family: "Open Sans", sans-serif;
+  position: fixed;
+  left: 50%;
+  top: 10vh;
+  z-index: 99999;
+  transform: translateX(-50%);
+  background-color: #FCFFFA;
+  min-height: 60vh;
+  width: 75%;
+  border-radius: 5%;
+  transition: display 1s;
+  display: flex;
+  flex-flow: column;
+  font-size: medium;
+  border: 2px solid grey;
+}
+
+.chosen-project > span {
+  width: 30%;
+  margin-top: 5%;
+  align-self: center;
+  text-align: center;
+}
+
+.chosen-project .project-description {
+  width: 80%;
+  margin: auto;
+}
+
+.chosen-project img {
+  width: 20%;
+  margin: auto;
+}
+
+@media (max-width: 360px) {
+  .chosen-project .project-description {
+    font-size: small
+  }
+}
+
 /* PONTES */
