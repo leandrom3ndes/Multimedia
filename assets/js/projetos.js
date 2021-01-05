@@ -41,9 +41,15 @@ var initialStylingImg = { "width": "80%" }
 
 var expandedStylingImg = { "width": "20%" }
 
-var initialStylingHeading = { "height": "20%" }
+var initialStylingHeading = { 
+    "height": "20%",
+    "margin": "5% 0 5% 0" 
+}
 
-var expandedStylingHeading = { "height": "auto" }
+var expandedStylingHeading = { 
+    "height": "10%",
+    "margin": "2.5% 0 2.5% 0" 
+}
 
 projetos.addClickHandler = function () {
     $(".card-projeto").each( function () {
@@ -53,8 +59,7 @@ projetos.addClickHandler = function () {
 
 projetos.expand = function () {
     var animationSettings = {
-        "width": "85vw",
-        "height": "100vh"
+        "width": "65vw"
     }
     $(this).css({"z-index": "99999"});
     $(this).animate( animationSettings, animationSpeed );
@@ -93,13 +98,11 @@ projetos.reverseExpand = function () {
 projetos.cursorPosition = function (e) {
 	cursorPosition.x = (window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
 	cursorPosition.y = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
-    console.log(cursorPosition);
     if ( cursorPosition.y > window.innerHeight  + window.innerHeight / 4 && window.innerWidth > 1199 || $(".icofont-close").is(":visible") ) { $("#header").css({"left": "0"}); $("#footer").css({"left": "0"});}
     else { $("#header").css({"left": "-300px"}); $("#footer").css({"left": "-300px"}); }
 }
 
 projetos.getMiddlePosition = function (currentYPosition) {
     var y = window.innerHeight;
-    console.log(y);
     return currentYPosition - y/4;
 }
