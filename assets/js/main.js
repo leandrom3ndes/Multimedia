@@ -239,7 +239,7 @@
             autoplay: 0, // Auto-play the video on load
             controls: 1, // Show pause/play buttons in player
             showinfo: 0, // Hide the video title
-            modestbranding: 1, // Hide the Youtube Logo
+            modestbranding: 0, // Hide the Youtube Logo
             loop: 1, // Run the video in a loop
             fs: 1, // Hide the full screen button
             cc_load_policy: 0, // Hide closed captions

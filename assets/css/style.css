@@ -1,9 +1,3 @@
-/**
-* Template Name: iPortfolio - v1.4.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
 /*--------------------------------------------------------------
 # General
@@ -31,6 +25,13 @@ a {
   text-decoration: none;
 }
 
+p{
+  padding: 12px 0 0 0;
+  margin: 0 0 0 5px;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  color: #122f57;
+}
 /* -------------------------------- 
 
 Main Components 
@@ -837,13 +838,6 @@ section {
   margin-left: 60px;
 }
 
-.facts .count-box p {
-  padding: 15px 0 0 0;
-  margin: 0 0 0 60px;
-  font-family: "Raleway", sans-serif;
-  font-size: 14px;
-  color: #122f57;
-}
 
 .facts .count-box a {
   font-weight: 600;
@@ -1515,7 +1509,13 @@ section {
     margin-top: 30px;
   }
 }
-
+/*--------------------------------------------------------------
+                          Fundação
+--------------------------------------------------------------*/
+.spaceDIV{
+  padding: 60px 0;
+  overflow: hidden;
+}
 /*--------------------------------------------------------------
 # Secao video
 --------------------------------------------------------------*/
@@ -1625,6 +1625,123 @@ section {
   color: white;
   transform: rotateY(180deg);
 }
+
+/*--------------------------------------------------------------
+  # MAPA CSS
+  --------------------------------------------------------------*/
+
+  @import url(http://fonts.googleapis.com/css?family=Engagement);
+
+  #content {
+    margin:20px auto 0;
+    width:1000px;
+  }
+  .fundacao {
+    float:left;
+    width:1000px;
+    height:600px;
+
+    -moz-box-shadow:0 0 5px #ddd;
+    -webkit-box-shadow:0 0 5px #ddd;
+    box-shadow:0 0 5px #ddd;
+  }
+
+  .menu {
+    margin-bottom:40px;
+    text-align:center;
+  }
+
+  .menu a {
+    color:#D7363A;
+    font-size:11px;
+    font-weight:bold;
+    margin:0 10px;
+  }
+
+  .preloader {
+      background:url(../img/Fundacao/loader.gif) no-repeat center #fff;
+  }
+
+  .marker {
+    display:block;
+    text-indent:-9999px;
+    width:15px;
+    height:23px;
+    outline:none;
+    background:url(../img/Fundacao/marker.png) no-repeat;
+    cursor:pointer;
+  }
+
+  .popup {
+    border-radius: 10px;
+    width:300px;
+    position:absolute;
+    padding:8px;
+    background:#2a2a2a;
+    color:#fff;
+    font-weight:bold;
+    font-size:11px;
+    line-height:20px;
+  }
+
+  .popup h3 {
+    color:#d6f1fd;
+    margin:0;
+    margin-bottom:10px;
+    font-family: 'Cabin Condensed', sans-serif;
+    font-weight:normal;
+    font-size:20px;
+  }
+
+  .popup .close {
+    border-radius: 15px;
+    display:block;
+    text-indent:-9999px;
+    position:absolute;
+    top:4px;
+    right:4px;
+    width:16px;
+    height:16px;
+    outline:none;
+    background:url(../img/Fundacao/close.gif) no-repeat;
+    cursor:pointer;
+  }
+
+  .relative {
+    position:relative;
+  }
+
+  .controls {
+    position:absolute;
+    top:20px;
+    left:20px;
+    z-index:20;
+  }
+
+  .controls a {
+    background:#2a2a2a;
+    background:rgba(0, 0, 0, .6);
+    display:block;
+    float:left;
+    clear:both;
+    font-size:11px;
+    font-weight:bold;
+    line-height:28px;
+    margin-bottom:4px;
+    outline:none;
+    padding:0 15px;
+    text-decoration:none;
+  }
+
+  .controls a:hover {
+    background:#eee;
+    color:#2a2a2a;
+  }
+
+  .controls .active {
+    background:#D7363A;
+    color:#fff;
+  }
 
 
 /*--------------------------------------------------------------
