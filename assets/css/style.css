@@ -1719,6 +1719,8 @@ section {
   }
 
   .controls a {
+    color:#d6f1fd;
+    border-radius: 5px;
     background:#2a2a2a;
     background:rgba(0, 0, 0, .6);
     display:block;
