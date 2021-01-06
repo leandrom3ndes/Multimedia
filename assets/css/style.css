@@ -2086,6 +2086,7 @@ html {
   position: absolute;
   right: 10px;
   top: 5px;
+  min-width: fit-content;
 }
 
 @media (max-width: 380px) {
