@@ -25,7 +25,7 @@ projetos.show = function () {
         html = '<div class="container-wxp"><span class="xp-header">' + heading + '</span><button class="wxp-button"></button></div><img src="' + img + '" /><div class="project-description"><span>' + description + '</span></div>'
     }
     $(element).html(html);
-    $(element).fadeIn(600);
+    $(element).show(550);
     $(this).attr("id") === 'windows-95' ? $(".w95-button").click( projetos.hide ) : $(".wxp-button").click( projetos.hide );
 }
 
