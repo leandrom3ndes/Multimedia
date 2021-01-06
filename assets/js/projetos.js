@@ -9,16 +9,24 @@ projetos.addClickHandler = function () {
     $(".card-projeto").each( function () {
         $(this).click( projetos.show );
     });
-    $(element).click( projetos.hide );
 }
 
 projetos.show = function () {
     var heading = $(this).find("span.card-heading").html();
     var img = $(this).find("img").attr("src");
     var description = $(this).find(".project-description span").html();
-    var html = '<span>' + heading + '</span><img src="' + img + '" /><div class="project-description"><span>' + description + '</span></div>'
+    var html;
+    if ( $(this).attr("id") === 'windows-95' ) {
+        $(element).addClass("w95-container");
+        html = '<div class="w95-heading"><span class="w95-header">' + heading + '</span><button class="w95-button">x</button></div><img src="' + img + '" /><div class="project-description"><span>' + description + '</span></div>'
+    } 
+    else {
+        $(element).removeClass("w95-container");
+        html = '<div class="container-wxp"><span class="xp-header">' + heading + '</span><button class="wxp-button"></button></div><img src="' + img + '" /><div class="project-description"><span>' + description + '</span></div>'
+    }
     $(element).html(html);
     $(element).fadeIn(600);
+    $(this).attr("id") === 'windows-95' ? $(".w95-button").click( projetos.hide ) : $(".wxp-button").click( projetos.hide );
 }
 
 projetos.hide = function () { $(element).fadeOut( 600 ); }
