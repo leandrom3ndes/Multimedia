@@ -213,7 +213,7 @@
     mode: 'horizontal',
     moveItems: 1,
     horizontalStartPosition: 'bottom', 
-    visibleItems: 4,
+    visibleItems: 3,
     forceVerticalMode: 600// 600px
   });
   
