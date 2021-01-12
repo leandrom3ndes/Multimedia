@@ -1886,24 +1886,31 @@ section {
 
 }
 
+
+
+
 /* Bouncing balls */
 .bouncingball-container {
+  
   width: 100%;
 }
 
 .bouncingball-container a {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4{
-  width:140px;
+  
+  /*width:140px;
   height:140px;
-  border-radius:100%;
-  background:#CCC;
+  border-radius:100%;*/
+  background:url(/assets/img/Pngtreeblue_bubble_transparent_3610323.png);
+  z-index: 999;
+  /*background:#CCC;*/
   animation: bounce 6s;
   animation-iteration-count: infinite;
-  position:absolute;
-  margin:50px;
+  position: absolute;
+  /*margin:50px;*/
   text-align: center;
   display: flex;
   align-items: center;
@@ -1989,6 +1996,7 @@ section {
   }
 }
 
+
 @media ( max-width: 470px ) {
 
   .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4 {
@@ -2001,6 +2009,7 @@ section {
   }
 
 }
+
 
 html {
   scroll-behavior: smooth !important;
