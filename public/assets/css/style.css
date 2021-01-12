@@ -1620,6 +1620,10 @@ section {
   color: black;
 }
 
+.flip-card-front img{
+  min-height: 250px !important;
+}
+
 /* Style the back side */
 .flip-card-back {
   background-color: rgb(255, 255, 255);
@@ -1636,7 +1640,7 @@ section {
   font-size: 14px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1280px) {
   .flip-card-back h4{
     padding-top: 2px;
     font-size: 16px !important;
