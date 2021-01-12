@@ -211,12 +211,13 @@
   //Timeline
   jQuery('.timeline').timeline({
     mode: 'horizontal',
-    moveItems: 1,
+    moveItems: 2,
     horizontalStartPosition: 'bottom', 
-    visibleItems: 3,
+    visibleItems: 2,
     forceVerticalMode: 600// 600px
   });
-  
+
+  $('#horiz_container_outer').horizontalScroll();
 })(jQuery);
 
   //Video Fundacao

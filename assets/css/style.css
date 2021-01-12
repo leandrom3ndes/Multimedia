@@ -1622,11 +1622,12 @@ section {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
+  background-color: rgb(255, 255, 255);
   color: white;
   transform: rotateY(180deg);
 }
 .flip-card-back h4{
+  color: #003dd7;
   padding-top: 2px;
   font-size: 16px;
 }
@@ -1634,6 +1635,18 @@ section {
 .flip-card-back p{
   font-size: 14px;
 }
+
+@media screen and (max-width: 800px) {
+  .flip-card-back h4{
+    padding-top: 2px;
+    font-size: 16px !important;
+  }
+  
+  .flip-card-back p{
+    font-size: 12px !important;
+  }
+}
+
 
 /*--------------------------------------------------------------
   # MAPA CSS
@@ -1754,6 +1767,17 @@ section {
     color:#fff;
   }
 
+  @media screen and (max-width: 800px) {
+    .relative{
+      margin: 1px, 1px; 
+      padding: 4px; 
+      width: 40%; 
+      overflow-x: auto; 
+      overflow-y: hidden; 
+    }
+
+  }
+  
 
 /*--------------------------------------------------------------
 # Footer
