@@ -1887,8 +1887,6 @@ section {
 }
 
 
-
-
 /* Bouncing balls */
 .bouncingball-container {
   
@@ -1906,13 +1904,10 @@ section {
   border-radius:100%;*/
   background:url(/assets/img/Pngtreeblue_bubble_transparent_3610323.png);
   z-index: 999;
-  /*background:#CCC;*/
-  animation: bounce 6s;
-  animation-iteration-count: infinite;
   position: absolute;
-  /*margin:50px;*/
+  margin:50px;
   text-align: center;
-  display: flex;
+  display: block;
   align-items: center;
   cursor: pointer;
 }
@@ -1926,13 +1921,17 @@ section {
   animation: bounce2 6s;
   animation-iteration-count: infinite;
 }
+.bouncingball, .bouncingball2{
+  animation: bounce 6s;
+  animation-iteration-count: infinite;
+}
 
 .bouncingball2, .bouncingball4{
-  right: 20px;
+  right: 5%;
 }
 
 .bouncingball4, .bouncingball3{
-  bottom:30px;
+  bottom:5%;
 }
 
 
@@ -1969,6 +1968,7 @@ section {
 
 @keyframes bounce2 {
   0% {
+      bottom: 0;
       animation-timing-function: ease-in;
   }
   25%{
@@ -1991,7 +1991,7 @@ section {
       transform: translateX(-50%);
     }
   100% {
-      bottom: 30px;
+      bottom: 0;
       animation-timing-function: ease-in;
   }
 }
