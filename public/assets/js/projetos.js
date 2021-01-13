@@ -33,7 +33,9 @@ projetos.hide = function () { $(element).fadeOut( 600 ); }
 
 projetos.cursorPosition = function (e) {
 	cursorPosition.x = (window.Event) ? e.pageX : event.clientX + (document.documentElement.scrollLeft ? document.documentElement.scrollLeft : document.body.scrollLeft);
-	cursorPosition.y = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
-    if ( cursorPosition.y > window.innerHeight  + window.innerHeight / 4 && window.innerWidth > 1199 || $(".icofont-close").is(":visible") ) { $("#header").css({"left": "0"}); $("#footer").css({"left": "0"});}
-    else { $("#header").css({"left": "-300px"}); $("#footer").css({"left": "-300px"}); }
+    cursorPosition.y = (window.Event) ? e.pageY : event.clientY + (document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop);
+    if ( window.innerWidth > 1199 ) {
+        if ( cursorPosition.y > window.innerHeight  + window.innerHeight / 4 ) { $("#header").css({"left": "0"}); $("#footer").css({"left": "0"});}
+        else { $("#header").css({"left": "-300px"}); $("#footer").css({"left": "-300px"}); }
+    }
 }
