@@ -1902,10 +1902,6 @@ section {
 }
 
 .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4{
-  
-  /*width:140px;
-  height:140px;
-  border-radius:100%;*/
   background:url(/assets/img/Pngtreeblue_bubble_transparent_3610323.png);
   z-index: 999;
   position: absolute;
@@ -1935,7 +1931,7 @@ section {
 }
 
 .bouncingball4, .bouncingball3{
-  bottom:5%;
+  bottom: 5%;
 }
 
 
@@ -1980,17 +1976,14 @@ section {
   }
   50% {
       bottom: 140px;
-      height: 140px;
       animation-timing-function: ease-out;
      }
   55% {
       bottom: 160px; 
-      height: 120px; 
       animation-timing-function: ease-in;
     }
   65% {
       bottom: 120px; 
-      height: 140px; 
       animation-timing-function: ease-out;
       transform: translateX(-50%);
     }
@@ -2000,20 +1993,12 @@ section {
   }
 }
 
+@media ( max-width: 1199px ) {
 
-@media ( max-width: 470px ) {
-
-  .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4 {
-    width: 100px;
-    height: 100px;
+  .bouncingball-container {
+    display: none;
   }
-
-  .bouncingball-span {
-    font-size: small;
-  }
-
 }
-
 
 html {
   scroll-behavior: smooth !important;
@@ -2139,6 +2124,7 @@ html {
   .chosen-project .project-description {
     font-size: small
   }
+
 }
 
 /* PONTES */
