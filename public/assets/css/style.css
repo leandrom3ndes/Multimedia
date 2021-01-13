@@ -1880,6 +1880,16 @@ section {
   margin-bottom: 5%;  
 }
 
+.card-projeto:hover{
+  position:relative;
+  top:-5px;
+  left:-5px;
+  width:500px;
+  height:auto;
+  display:block;
+}
+
+
 .card-projeto .project-description {
   display: none;
   visibility: hidden;
