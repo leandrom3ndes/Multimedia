@@ -1921,7 +1921,6 @@ section {
 }
 
 .bouncingball, .bouncingball2, .bouncingball3, .bouncingball4{
-  background:url(/assets/img/Pngtreeblue_bubble_transparent_3610323.png);
   z-index: 999;
   position: absolute;
   margin:50px;
