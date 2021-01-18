@@ -5,7 +5,7 @@ var element = $(".chosen-project");
 var cursorPosition = {};
 
 projetos.addClickHandler = function () {
-    $(element).hide();
+    // $(element).hide();
     $(".card-projeto").each( function () {
         $(this).click( projetos.show );
     });
@@ -16,6 +16,7 @@ projetos.show = function () {
     var img = $(this).find("img").attr("src");
     var description = $(this).find(".project-description span").html();
     var html;
+    $(element).css( { display: "flex" } );
     if ( $(this).attr("id") === 'windows-95' ) {
         $(element).addClass("w95-container");
         html = '<div class="w95-heading"><span class="w95-header">' + heading + '</span><button class="w95-button">x</button></div><img src="' + img + '" /><div class="project-description"><span>' + description + '</span></div>'

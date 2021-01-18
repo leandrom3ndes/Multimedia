@@ -652,7 +652,8 @@ h1, h2, h3, h4, h5, h6 {
 #header {
   position: fixed;
   top: 0;
-  left: 0;
+  /* left: 0; */
+  left: -300px;
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
@@ -2133,6 +2134,7 @@ html {
 }
 
 .chosen-project {
+  display: none;
   font-family: "Open Sans", sans-serif;
   position: fixed;
   left: 50%;
@@ -2143,7 +2145,7 @@ html {
   min-height: 60vh;
   width: 75%;
   transition: display 1s;
-  display: flex;
+  /* display: flex; */
   flex-flow: column;
   font-size: medium;
   max-height: 85vh;
