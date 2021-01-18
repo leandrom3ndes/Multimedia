@@ -1,30 +1,18 @@
-/**
-* Template Name: iPortfolio - v1.4.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 $(window).on("load", function() {
-	var audio = document.getElementById("windowsXPAudio");
-	audio.load();
-	audio.play();
-	setTimeout(removeLoader, 2000); //espera pela página + 3 sec.
 	
-	$(".chosen-project").hide();
+	document.getElementById("windowsXPAudio").play();
+	setTimeout(removeLoader, 2500); //espera pela página + 3 sec.
+	$(".window").delay(2500).fadeIn(500);
 	
 });
 
 function removeLoader(){
     $( "#loader-wrapper" ).fadeOut(500, function() {
-      // fadeOut complete. Remove the loading div
-	$( "#loader-wrapper" ).remove(); //makes page more lightweight 
-  });  
+		$('.chosen-project').hide();
+		$( "#loader-wrapper" ).remove(); 
+  	});  
 }
-
-$(document).ready(function() {
-	$(".window").delay(3200).fadeIn(500);
-	
-})
 
 
 !(function($) {
@@ -267,8 +255,8 @@ $(document).ready(function() {
             cc_load_policy: 0, // Hide closed captions
             iv_load_policy: 3, // Hide the Video Annotations
             autohide: 1, // Hide video controls when playing
-            start: 250,
-            end: 300,
+            start: 265,
+            end: 500,
             mute: 1, // Sound Off On
             rel: 0
 			}
