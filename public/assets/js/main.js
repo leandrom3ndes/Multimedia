@@ -9,7 +9,7 @@ $(window).on("load", function() {
 
 function removeLoader(){
     $( "#loader-wrapper" ).fadeOut(500, function() {
-		$('.chosen-project').hide();
+		// $('.chosen-project').hide();
 		$( "#loader-wrapper" ).remove(); 
   	});  
 }
