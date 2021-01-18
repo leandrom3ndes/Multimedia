@@ -4,6 +4,29 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+$(window).on("load", function() {
+	var audio = document.getElementById("windowsXPAudio");
+	audio.load();
+	audio.play();
+	setTimeout(removeLoader, 2000); //espera pela página + 3 sec.
+	
+	$(".chosen-project").hide();
+	
+});
+
+function removeLoader(){
+    $( "#loader-wrapper" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+	$( "#loader-wrapper" ).remove(); //makes page more lightweight 
+  });  
+}
+
+$(document).ready(function() {
+	$(".window").delay(3200).fadeIn(500);
+	
+})
+
+
 !(function($) {
   "use strict";
 
@@ -251,6 +274,10 @@
 			}
 		});
 	}
+
+	function make_disappear(){
+        $('.window').hide();
+      }
 	/*******************************************************/
 jQuery(document).ready(function($){
 
