@@ -2138,9 +2138,11 @@ html {
   font-family: "Open Sans", sans-serif;
   position: fixed;
   left: 50%;
-  top: 10vh;
+  /* top: 10vh; */
+  top: 50%;
   z-index: 99999;
-  transform: translateX(-50%);
+  /* transform: translateX(-50%); */
+  transform: translate(-50%, -50%);
   background-color: #FCFFFA;
   min-height: 60vh;
   width: 75%;
